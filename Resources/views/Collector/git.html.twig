@@ -1,0 +1,29 @@
+{% extends 'WebProfilerBundle:Profiler:layout.html.twig' %}
+
+{% block toolbar %}
+    {# the web debug toolbar content #}
+        {% set icon %}
+            <img width="23" height="28" alt="Git" style="border-width: 0; vertical-align: middle; margin-right: 5px;" src="{{ asset('bundles/lidaagit/images/git.png') }}">
+        {% endset %}
+        {% set text %}
+            <span title="LidaaGit">Git</span>
+        {% endset %}
+    {% include 'WebProfilerBundle:Profiler:toolbar_item.html.twig' with { 'link': profiler_url } %}
+{% endblock %}
+
+{% block head %}
+    {# if the web profiler panel needs some specific JS or CSS files #}
+        lidaa
+{% endblock %}
+
+{% block menu %}
+	<span class="label">
+		 <span class="icon"><img src="{{ asset('bundles/lidaagit/images/git.png') }}" alt="" /></span>
+		 <strong>Git</strong>
+	</span>
+{% endblock %}
+
+{% block panel %}
+    {# the panel content #}
+        lidaa
+{% endblock %}
