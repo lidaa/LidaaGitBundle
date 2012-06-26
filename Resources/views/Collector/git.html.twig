@@ -3,7 +3,25 @@
 {% block toolbar %}
     {# the web debug toolbar content #}
         {% set icon %}
-            <img width="23" height="28" alt="Git" style="border-width: 0; vertical-align: middle; margin-right: 5px;" src="{{ asset('bundles/lidaagit/images/git.png') }}">
+            <img width="23" height="23" alt="Git" style="border-width: 0; vertical-align: middle; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAOcSURBVHja5JW9i6RF
+EMafqu6e9515h1lYmUv2GLgFdeBE9DTSQAMNhGP1BI2E00jOQBHvL1ADDczFyMRMXIwO/EAxEi87
+9BRBV2R10F3u9mbn4/3oqjLYeYeZnQkvs8Nu6tdVTz9VTWaGu7kYd3nddaAHgJ2dnaVNIkKj0cB4
+PIZz7szW1taHIYRmnueDg4ODK0RUNBoNlGW5FLe7u3sCXKejcw5JkoCZz02n00tFUaCqKgFwNU3T
+oo4jotUMkyQ5nSGHEB6NMaaq+tB0OgUzQ1WLjY2NJ0IIh3me3zGzG2tL7na7S+WKyHkz+97MqCgK
+MDOICM65VrPZ/GwGvwWgb2YHK8DBYHD6oqzRaJBzDt77pYOjoyMAgIi0mbm1NsPTOgC4A2BqZv7k
+mPxCBdHMjIhuARitBa55lN+qqroAgImoH0L41DlHIvJvjPGiqo6dc5Vz7vZaYKfTOb1fMvMvqorj
+4+PbqloxsxORoZld73Q6YOa17vAA0G63V/bN7CkAaQghizF+TESUJMnEe/98CEEBDAF8A8AWq/QA
+MBqtSHGema/V+jKz1p0lIm/EGGFmOYBtAINFhgeA4XC4kmGapmDmlRYlIhARyrK0ulPMDDHG1Veu
+0yaiQzPbM7MEQDpjGRGNp9OpqiqFEPaJaLB40Ry4uEQEAP5S1ZeYORDRj3WMiDy7t7d3T57ntL29
+XTSbzZdVFQCImX8A8NMS0MweUdUXzOxpVb3fe/8lM1+qz1X1aq/X6xMRVBVFUQAAYozI8/wjAK/W
+wFRE3heR12ZmRp7nmEwmaYwRm5ubyLIMRDQSEeR5jjRN4ZyDqsJ7D+/92bnYqvpOjPF1M/POOYgI
+Yox/FEXx1Wg0goiAiGBmMuvjnwH87ZyDc+6kV7PssTnQzJ5bEDdvNBqXsyy7r9VqfdDtdpGmKcqy
+xGg08pPJBGVZvp0kyb1E9CaAONNe548SY3SzDCAi3nv/pPf+RrfbvcnMpZlBVUFEV0Rkq91u31TV
+B1X1cRHhdcNh4L0/F2OEqvqqql4hosvM/CuA34noHwBllmViZmfM7IGqqvqLlnGz2v1sOr+rqp+H
+EIKqQkRgZhxj7APoL7hgPqVr09c6ish4EXgtxnhRRN5j5odDCHPAzGfzL8F7j7IsUVXVvBFijN8x
+81tLxnbOfWFm36rqMwBeBHCBiM5679v1AOn1emi1Wtjf3x8eHh7+aWbXy7L8hIi+rjOm/99H/98A
+RC/0r2q7gEgAAAAASUVORK5CYII=">
         {% endset %}
         {% set text %}
             <span title="LidaaGit">Git</span>
@@ -13,8 +31,33 @@
 
 {% block menu %}
 	<span class="label">
-		 <span class="icon"><img src="{{ asset('bundles/lidaagit/images/git.png') }}" alt="" /></span>
-		 <strong>Git</strong>
+		 <span class="icon">
+		<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAYAAAB/E6/TAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA
+IGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAASZSURBVHjavJbLjxRV
+FMa/79xbXdUz3cOQgC1CZoELUVywMBh1KSxMiHHhY2HcuYBo2LhwIS40xrj0LyDRRHwkLIwmSowL
+44P4iKJRHkYJEogITqYHprt66tY5xwXdk4GeGYgLTlJJpe7jd09953xVdHfcioijm3379o0Nmhm6
+3S5UFc1mc0uM8eDU1NROVS273e7Bbrf7UrPZRKPRQFmWIHnN+sOHD4+DVguSMDP0er2pZrP50Nzc
+3ISZrRsMBtuLokCr1cJgMLj5jFaJnORtJCsz21RVlcYYYWYIIWRFUWx095zkIoBZAHZDkNnYnIzk
+E+12+61er9dfXFwUEWmOsmw0Grunp6f/cPfWwsLCl1VV7RWRkzcEzc7OXj8WSN4ZYxQArRjjkgYk
+kVLKLl26lAFAXdebzazj7jcG1XV9/ZiT7IYQQNKHkGvUdncDIABKd+/9X41qACdTSp+TvEKyHUJ4
+gOTEEHLWzH4wsxbJ30Tk4k2BYhxjKoAjJI8MNewA+CbLsq2qCjP7GMBzJBFCWGn9yqBOp7PmxLIs
+i/n5+b/dfRKAhxDmp6enEWPESk1/fU+tVXUEcIe773b3muTE5OTkMZJnACjJWlWfIjnh7hdIfgXg
+CgCo6pjmS6B+vz9W3gAeF5E3RyfMskwBpGEBNEYbuvsZd38SwPck0ev1xvZbAl2+fBnuvjxlIdnO
+83z5szC8rk4QAQAsLi6mqqoaJKGqK2q+ooJDoAI4D2CBZA0gXzYluXs/pUSSkeRpETlnZmParAka
+LkgkP6uq6nWSIKkiAneHuzf6/f7G8+fPe5ZleafT+bMoimlVLYaNPk/yn2GLrNlHG1JKd5O83cwW
+QgizIYRDo0PUdX1/SulAjDGJiKaUNonIHnePZpaZ2SkzewPA8dVALXd/xMweBfCwu29KKSGl9AWA
+QyKCPM8BYGee53u2bNkCd4eqIqW05PRlWW5393dXA20ws1dV9Vl3z0bClmWJfr8/qKoKExMTmJmZ
+QVVVXXdHWZZIKaEoCuR5jrquMTyMFEVxL4BPlgpnGWivqu5z90xEICJQ1X9V9UhK6aNer4fBYAAz
+g5k5SYhIqarfAvg6hFCGEGBmyLKsKSLPr9awjy3rcBeR43me748x/tRsNudarRZCCBgMBqiqilVV
+wcy67v5ajPFHVX2G5Isk1w91nFkRlFKKJOHuo6oLMcZmo9GIMUasX78eg8EAqgqSn9Z1/YKIXCiK
+4meS61S18KuB0T6rZdQbvWczo6puc/f3SR41s1MATrj7XAghhRAWQwgnAWwl+Yqq7nD3He5Od1/R
+/5a79ztm9mCWZRi6M1R1EsCuuq53kTSSl4e+B5KZma0zsyVHGdrUqPrOrggSkbfdfauZ7Q8hZCNh
+hw0Kdxd3nx6Vs7sjhIAQwpJbjyzJzH4HcGA1Z1gg+bK7f2dmT5PcJSIT11tTjBHtdhvtdht1XaPb
+7aIsy1FWf6nqh+7+Hsmja1lQKSIfmNlRd7+H5H0A7gKwLYQwIyKdGCNarRY2b95cAzjXaDROX7x4
+8URd17+mlI65+y8kxz4FvFV/qoJbFP8NAGdLuw8xRcpiAAAAAElFTkSuQmCC"
+ alt="" />
+		</span>
+	        <strong>Git</strong>
 	</span>
 {% endblock %}
 
