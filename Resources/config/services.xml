@@ -6,12 +6,23 @@
 
     <parameters>
         <parameter key="data_collector.lidaa_git.class">Lidaa\GitBundle\DataCollector\GitDataCollector</parameter>
+        <parameter key="lidaa_git.shell.class">Lidaa\GitBundle\Git\GitShell</parameter>
     </parameters>
 
     <services>
         <service id="data_collector.lidaa_git" class="%data_collector.lidaa_git.class%">
 	 			<tag name="data_collector" template="LidaaGitBundle:Collector:git" id="lidaa_git" />
             <!--
+            <argument type="service" id="service_id" />
+            <argument>plain_value</argument>
+            <argument>%parameter_name%</argument>
+        		-->
+			</service>
+     		
+     		<service id="lidaa_git.shell" class="%lidaa_git.shell.class%">
+            <argument type="service" id="kernel" />
+            <!--
+	 			<tag name="data_collector" template="LidaaGitBundle:Collector:git" id="lidaa_git" />
             <argument type="service" id="service_id" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
